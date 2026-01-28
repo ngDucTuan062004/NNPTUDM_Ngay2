@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post & Comment CRUD</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<h2>POST LIST</h2>
+
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>VIEWS</th>
+            <th>COMMENTS</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody id="post_table"></tbody>
+</table>
+
+<hr>
+
+<h3>Add / Edit Post</h3>
+<input type="text" id="post_id" disabled />
+<input type="text" id="post_title" placeholder="Title" />
+<input type="text" id="post_views" placeholder="Views" />
+<button onclick="SavePost()">Save</button>
+<button onclick="ResetPostForm()">Cancel</button>
+
+<hr>
+
+<h3>COMMENT CRUD</h3>
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>TEXT</th>
+            <th>POST ID</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody id="comment_table"></tbody>
+</table>
+
+<br>
+<input type="text" id="comment_id" disabled />
+<input type="text" id="comment_text" placeholder="Comment text" />
+<input type="text" id="comment_postId" placeholder="Post ID" />
+<button onclick="SaveComment()">Save Comment</button>
+
+</body>
+</html>

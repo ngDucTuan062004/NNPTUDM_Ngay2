@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post 1",
+      "views": 100,
+      "isDeleted": true
+    },
+    {
+      "id": "2",
+      "title": "Post 2",
+      "views": 200,
+      "isDeleted": true
+    },
+    {
+      "id": "3",
+      "title": "Post 3",
+      "views": "100",
+      "isDeleted": false
+    }
+  ],
+  "comments": [
+    {
+      "id": "3",
+      "text": "Hahaha",
+      "postId": "2"
+    }
+  ]
+}
